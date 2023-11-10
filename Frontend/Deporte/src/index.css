@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
+
+  --background-color-dark: #000000;
+  --text-color-dark: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para el menú desplegable */
+
+.bg1 {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+
+.noticia {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  max-width: 300px;
+  display: inline-block;
+}
+
+.bg-custom-bg-color {
+  background-color: #0f001d;
+}
+
+/* CalendarioLiga.css */
+.calendario-container {
+  display: flex;
+  justify-content: center; /* Centra las jornadas en el eje principal */
+  flex-wrap: wrap;
+}
+
+.jornada-container {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 10px;
+  text-align: center; /* Centra el contenido dentro de cada jornada */
+  min-width: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.partidos-list {
+  list-style: none;
+  padding: 0;
+}
+
+.partido-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.local-team,
+.visitante-team,
+.resultado {
+  flex: 1;
+  text-align: center;
+}
+
+.resultado {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .jornada-container {
+    width: 100%; /* Ocupa todo el ancho disponible en pantallas más pequeñas */
+    max-width: none; /* Elimina el ancho máximo */
+  }
+}
+
+.escudo-equipo {
+  width: 50px; /* Ajusta el ancho según sea necesario */
+  height: 50px; /* Ajusta la altura según sea necesario */
+  margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+}
