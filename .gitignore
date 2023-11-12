@@ -1,39 +1,31 @@
-# Entorno virtual
-Reto/
-venv/
+# Ignorar archivos y directorios generados automáticamente
+__pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Archivos y directorios generados automáticamente
-__pycache/
+# Ignorar directorio de node_modules en el Frontend
+Frontend/Deporte/node_modules/
 
-# Archivos de configuración local (ajusta según tus necesidades)
-config_local.json
-secrets.json
+# Ignorar archivos generados en el Frontend durante la construcción
+Frontend/Deporte/dist/
+Frontend/Deporte/public/
 
-# Archivos temporales
-*.swp
-*~
-
-# Archivos de respaldo generados por editores de texto (ajusta según tus necesidades)
-*.bak
-
-# Archivos de registro
-*.log
-
-# Carpeta de compilación
-build/
-
-# Carpeta de distribución
-dist/
-
-.env
-
+# Ignorar archivos de media en el Backend
 Backend/media/
+Backend/staticfiles/
+Backend/static/
+
+# Ignorar archivos de configuración específicos de desarrollo
+*.env
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+
+# Ignorar archivos de logs y bases de datos
+*.log
+*.sql
+*.sqlite3
 
 Backend/noticias/migrations/
-Frontend/Deporte/src/assets/img/
-
-Backend/static
-Backend/staticfiles
-Frontend/Deporte/dist
-Frontend/Deporte/node_modules
