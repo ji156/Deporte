@@ -1,0 +1,39 @@
+# Entorno virtual
+Reto/
+venv/
+*.pyc
+
+# Archivos y directorios generados automáticamente
+__pycache/
+
+# Archivos de configuración local (ajusta según tus necesidades)
+config_local.json
+secrets.json
+
+# Archivos temporales
+*.swp
+*~
+
+# Archivos de respaldo generados por editores de texto (ajusta según tus necesidades)
+*.bak
+
+# Archivos de registro
+*.log
+
+# Carpeta de compilación
+build/
+
+# Carpeta de distribución
+dist/
+
+.env
+
+Backend/media/
+
+Backend/noticias/migrations/
+Frontend/Deporte/src/assets/img/
+
+Backend/static
+Backend/staticfiles
+Frontend/Deporte/dist
+Frontend/Deporte/node_modules
