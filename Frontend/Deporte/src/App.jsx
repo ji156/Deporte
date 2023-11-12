@@ -8,7 +8,14 @@ import NoticiaDetalle from "./components/NoticiaDetalle";
 import Registro from "./components/Registro";
 import IniciarSesion from "./components/IniciarSesion";
 import Terminos from "./components/Terminos";
+import Hotjar from "@hotjar/browser";
 
+const hotjarId = process.env.REACT_APP_HOTJAR_ID;
+const hotjarScriptVersion = process.env.REACT_APP_HOTJAR_SCRIPT_VERSION;
+
+if (hotjarId && hotjarScriptVersion) {
+  Hotjar.initialize(hotjarId, hotjarScriptVersion);
+}
 const App = () => {
   return (
     <div>
