@@ -30,7 +30,13 @@ DATABASE_HOST=localhost
 PGADMIN_PROJECT_NAME=reto_deportes
 PGADMIN_DEFAULT_EMAIL=admin@gmail.com
 PGADMIN_DEFAULT_PASSWORD=admin
-SECRET_KEY='9x)1-vo&4tw)e!0jj-zv5$2sxs%sxs%sxs%pfq_hinx5b4h-awdun^yb^('
+SECRET_KEY='<generar una clave aleatoria para Django>'
+```
+*Ejecuta el siguiente comando para generar una clave random aleatoria para Django
+
+``` 
+python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+
 ```
 
 Estas credenciales se utilizan para configurar la base de datos PostgreSQL y el administrador de PostgreSQL.
